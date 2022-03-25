@@ -11,12 +11,13 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorColor = UIColor .clear;
         tableView.rowHeight = 150
+        
+        
         loadCharacters {
             DispatchQueue.main.async {
-               
-            self.tableView.reloadData()
-               
+                self.tableView.reloadData();
             }
         }
 
@@ -45,7 +46,7 @@ class TableViewController: UITableViewController {
 
         let  character = results[indexPath.row]
         
-        cell.initCell(chacter: character)
+        cell.initCell(character: character)
         
 
         return cell

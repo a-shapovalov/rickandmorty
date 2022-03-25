@@ -16,6 +16,7 @@ var urlToData:URL {
 }
 
 
+
 func loadCharacters(completionHandler: (()->Void)?){
     
     let url = URL(string: "https://rickandmortyapi.com/api/character")!

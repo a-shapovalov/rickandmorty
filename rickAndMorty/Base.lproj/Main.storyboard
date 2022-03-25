@@ -15,6 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationLevel="9" indentationWidth="10" reuseIdentifier="Cell" rowHeight="149" id="Crt-Zk-eOM" customClass="TableViewCell" customModule="rickAndMorty" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="149"/>
@@ -24,14 +25,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8VB-nN-ith">
-                                            <rect key="frame" x="20" y="11" width="121" height="128"/>
+                                            <rect key="frame" x="12" y="11" width="121" height="123"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKC-Yo-0Ou">
-                                            <rect key="frame" x="149" y="117" width="42" height="21"/>
+                                            <rect key="frame" x="149" y="113" width="260" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="human, male" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-fc-G76">
@@ -41,8 +42,22 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-tW-g36" userLabel="Label Name">
+                                            <rect key="frame" x="149" y="15" width="180" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dty-1f-UMe" userLabel="Label Status">
+                                            <rect key="frame" x="331" y="14" width="78" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5K-zq-LYu">
-                                            <rect key="frame" x="149" y="79" width="158" height="30"/>
+                                            <rect key="frame" x="149" y="75" width="158" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Watch episods">
@@ -50,7 +65,7 @@
                                             </state>
                                             <buttonConfiguration key="configuration" style="plain">
                                                 <backgroundConfiguration key="background" cornerRadius="14">
-                                                    <color key="backgroundColor" red="1" green="0.88248163588518758" blue="0.62986884106615615" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" red="1" green="0.89524020343395716" blue="0.79151412159764467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </backgroundConfiguration>
                                                 <attributedString key="attributedTitle">
                                                     <fragment content="► ">
@@ -78,37 +93,14 @@
                                                 <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                             </buttonConfiguration>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-tW-g36">
-                                            <rect key="frame" x="149" y="15" width="169" height="25"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R03-Ff-OEg">
-                                            <rect key="frame" x="342" y="12" width="72" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled">
-                                                <backgroundConfiguration key="background" cornerRadius="16"/>
-                                                <attributedString key="attributedTitle">
-                                                    <fragment content="Button">
-                                                        <attributes>
-                                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
-                                            </buttonConfiguration>
-                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="battonStatus" destination="R03-Ff-OEg" id="pdV-3K-t2U"/>
                                     <outlet property="imageCharacter" destination="8VB-nN-ith" id="TLK-FN-Okt"/>
-                                    <outlet property="labelSpeciasGender" destination="BeP-fc-G76" id="exk-gX-m3G"/>
-                                    <outlet property="lableLocation" destination="iKC-Yo-0Ou" id="Mgf-uN-EFO"/>
-                                    <outlet property="lableName" destination="Zp1-tW-g36" id="9pG-3B-XcE"/>
+                                    <outlet property="labelLocation" destination="iKC-Yo-0Ou" id="s8r-Hl-vNO"/>
+                                    <outlet property="labelName" destination="Zp1-tW-g36" id="v2S-Qw-Mbh"/>
+                                    <outlet property="labelSpeciasGender" destination="BeP-fc-G76" id="nBq-bq-Nax"/>
+                                    <outlet property="labelStatus" destination="dty-1f-UMe" id="Dnk-X5-xnV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -146,9 +138,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

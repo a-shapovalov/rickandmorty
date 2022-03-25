@@ -15,6 +15,8 @@ struct Character {
     let type: String
     let gender: String
     let urlToImage: String
+    let locationName: String
+    
     
     init (dictionary: Dictionary<String, Any>){
         name = dictionary["name"] as? String ?? ""
@@ -23,6 +25,7 @@ struct Character {
         type = dictionary["type"] as? String ?? ""
         gender = dictionary["gender"] as? String ?? ""
         urlToImage = dictionary["image"] as? String ?? ""
+        locationName = (dictionary["location"] as? Dictionary<String, Any> ?? ["":""]) ["name"] as? String ?? ""
     }
 }
 
